@@ -5,9 +5,11 @@ const sumEuro = 120*12247.79;
 const costs = Math.round (Number (sumDollar+sumEuro));
 
 if ( X>=costs ) {
-    alert (`Oq yo'l ${userName}`);
+    alert (`Sizda mablag' yetarli, Oq yo'l ${userName}`);
+} else if (X<costs) {
+    alert (`${userName}, sizda mablag' yetarli emas, ozgina sabr qilish kerak bo'lar ekan`);
 } else {
-    alert (`${userName}, ozgina sabr qilish kerak bo'lar ekan`);
+    alert (`${userName}, siz faqat son kiritishingiz kerak edi`);
 }
 
 console.log(typeof X);
